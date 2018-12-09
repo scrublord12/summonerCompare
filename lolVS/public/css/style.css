@@ -1,0 +1,109 @@
+.container {
+    background: rgba(37, 37, 37, 0.527);
+    margin: 25px 0px 25px 0px;
+    box-shadow: 0px 0px 18px 1px rgba(255, 255, 255, 0.171);
+    padding-bottom: 20px;
+
+}
+
+#top-title {
+    color: rgb(255, 220, 132);
+    padding-top: 5px;
+    font-family: Hrlvetica;
+    font-weight: 10px;
+    font-size: 24px;
+}
+
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    text-align: center;
+}
+
+.summoner1-card .card-header {
+    border-color: rgb(73, 152, 255);
+    border-width: 3px;
+}
+
+.summoner2-card .card-header {
+    border-color: rgb(255, 98, 98);
+    border-width: 3px;
+}
+
+#result-tab {
+    padding-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    /* display: none; */
+}
+
+#loading-tab {
+    color: rgb(255, 220, 132);
+    display: none;
+
+}
+
+#first-summoner-entry-form {
+    width: 40%;
+}
+
+#second-summoner-entry-form {
+    width: 40%;
+}
+
+#vs-label {
+    color: rgb(189, 176, 156);
+    font-size: 25px;
+    font-style: bold;
+    padding-top: 5px;
+}
+
+.btn-primary.buttons {
+    background: rgb(255, 220, 132);
+    justify-content: center;
+    border: none;
+    margin-top: 15px;
+    color: rgb(36, 36, 36);
+    border: none;
+    outline: 0;
+}
+
+.btn-primary.buttons:hover {
+    background: rgb(255, 237, 194);
+    color: rgb(36, 36, 36);
+    border: none;
+    outline: 0;
+}
+
+.btn-primary.buttons:focus {
+    background: rgb(195, 157, 66) !important;
+    color: rgb(36, 36, 36) !important;
+    border: none !important;
+    outline: 0 !important;
+}
+
+.btn-primary.buttons:active {
+    background: rgb(195, 157, 66) !important;
+    color: rgb(36, 36, 36) !important;
+    border: none !important;
+    outline: 0 !important;
+}
+
+.body {
+    /* background: rgb(136, 107, 202); */
+    background-image: url("../images/backgroundImg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+
+}

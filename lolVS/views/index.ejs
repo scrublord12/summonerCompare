@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body class="body">
+    <div class=container>
+        <center>
+            <!--page top-title-->
+            <div id="top-title">
+                <h1>LolVS</h1>
+            </div>
+
+            <!--summoner entry points-->
+            <form>
+
+                <input type="text" name="summonerEntry1" class="form-control" id="first-summoner-entry-form"
+                    placeholder="Enter 1st Summoner">
+                <h1 id="vs-label">VS</h1>
+                <input type="text" name="summonerEntry2" class="form-control" id="second-summoner-entry-form"
+                    placeholder="Enter 2nd Summoner">
+
+                <!--compare 2 summoners "go" button-->
+                <div id="compare-button">
+                    <input type="submit" value="Compare" class="btn btn-primary btn-lg
+                                buttons">
+                </div>
+            </form>
+        </center>
+
+        <!--loading screen-->
+        <div id="loading-tab">
+            <center>
+                <h1>Loading...</h1>
+            </center>
+        </div>
+
+        <!--Data and comparision gathered-->
+        <div id="result-tab">
+            <div class="row align-self-center">
+                <div class="col">
+                    <div class="card summoner1-card">
+                        <div id="summoner1-name" class="card-header">
+                            <%= summoner1.name %>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="summoner1-level" class="list-group-item">
+                                Level:
+                                <%= summoner1.level %>
+                            </li>
+                            <li id="summoner1-rank" class="list-group-item">
+                                Rank:
+                                <%= summoner1.rank %>
+                            </li>
+                            <li id="summoner1-wins" class="list-group-item">
+                                Wins:
+                                <%= summoner1.wins %>
+                            </li>
+                            <li id="summoner1-losses" class="list-group-item">
+                                Losses:
+                                <%= summoner1.losses %>
+                            </li>
+                            <li id="summoner1-winrate" class="list-group-item">
+                                Winrate:
+                                <%= summoner1.winrate %>%
+                            </li>
+                            <li id="summoner1-chaampion-score" class="list-group-item">
+                                Champion Mastery Score:
+                                <%= summoner1.championMasteryScore %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card summoner2-card">
+                        <div id="summoner2-name" class="card-header">
+                            <%= summoner2.name %>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="summoner2-level" class="list-group-item">
+                                Level:
+                                <%= summoner2.level %>
+                            </li>
+                            <li id="summoner2-rank" class="list-group-item">
+                                Rank:
+                                <%= summoner2.rank %>
+                            </li>
+                            <li id="summoner2-wins" class="list-group-item">
+                                Wins:
+                                <%= summoner2.wins %>
+                            </li>
+                            <li id="summoner2-losses" class="list-group-item">
+                                Losses:
+                                <%= summoner2.losses %>
+                            </li>
+                            <li id="summoner2-winrate" class="list-group-item">
+                                Winrate:
+                                <%= summoner2.winrate %>%
+                            </li>
+                            <li id="summoner2-champion-score" class="list-group-item">
+                                Champion Mastery Score:
+                                <%= summoner2.championMasteryScore %>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
